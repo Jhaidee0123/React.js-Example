@@ -1,26 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import TarjetaFruta from './components/TarjetaFruta/tarjeta-fruta'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+    <div>
+        <TarjetaFruta name={'Sandia'} price={5.00} />
+        <TarjetaFruta name={'Naranja'} price={98.0}/>
+        <TarjetaFruta name='Kiwi' price={3.30} />
     </div>
-  );
-}
+)
 
-export default App;
+export default App
